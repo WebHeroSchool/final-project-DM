@@ -87,7 +87,7 @@ body{
     animation: bounce 1s;
 }
 
-/* .div-second{
+.div-second{
     background-color:#E3EAFE ;
     display: flex;
     flex-direction: column;
@@ -105,7 +105,7 @@ body{
 }
 
 .div-second__subtitle{
-    font: 900 30px/35px 'Roboto-Black';
+    font: 900 30px/35px 'Roboto-Medium';
     color:#263B83;
     margin: 0;
     padding-bottom: 33px;
@@ -143,7 +143,7 @@ body{
     width: 146px;
     background: #FFDA45;
     margin-top:13px;
-    margin-bottom:55px ;
+    margin-bottom:50px ;
 }
 
 .div-third{
@@ -163,7 +163,7 @@ body{
 .div-third__title{
     margin: 0;
     font: 900 30px/35px 'Roboto-Black';
-    padding-top: 25px;
+    padding-top: 31px;
     color: white;
 }
 
@@ -173,9 +173,12 @@ body{
 }
 
 .div-third__img{
-    width: 35%;
-    height: 100%;
-    margin-right: 4%;
+    background: url("img/div-third.png");
+    margin-right: 3%;
+    width: 464px;
+    height: 329px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .div-third__button{
@@ -216,7 +219,7 @@ body{
     padding-bottom: 25px;
 }
 
-.div-album__img{
+.div-album__img {
     padding-right: 21px;
     margin-bottom: 65px;
 }
@@ -263,7 +266,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-right: 26px;
+    padding-right: 20px;
 }
 
 .footer-contacts__tel_numb{
@@ -283,7 +286,7 @@ footer{
     background-size: contain;
     width: 50px;
     height: 52px;
-    padding-right: 18px;
+    padding-right: 22px;
 }
 
 .footer-contacts__img_telegram{
@@ -293,16 +296,18 @@ footer{
     background-position: center;
     width: 50px;
     height: 52px;
-}*/
+}
 
 @media (max-width:1300px) {
     .menu__item {
         font: 900 16px/21px 'Roboto-Regular';
         padding-left: 40px;
     }
-    /*.div-second__title{
+
+    .div-second__title{
         width: 50%;
     }
+
     .div-third{
         background: #405DBB;
         display: flex;
@@ -311,31 +316,33 @@ footer{
         justify-content: center;
         padding-right: 0;
     }
+
     .div-third_info{
         margin-left: 0;
         padding-right: 0;
     }
+
     .div-third__title{
         text-align: center;
         margin-top: 8%;
         padding-top: 0;
     }
+
     .div-third__subtitle{
         text-align: center;
     }
+
     .div-third__img{
-        width: 35%;
-        height: 100%;
-        margin-top: 2%;
-        margin-bottom: 3%;
-        margin-right: 0;
+        margin: 2% 0 3% 0;
     }
+
     .div-third__button{
         margin-bottom: 3%;
     }
+
     .div-photos__title{
         width: 60%;
-    }*/
+    }
 
 }
 
@@ -344,12 +351,15 @@ footer{
         background-repeat: no-repeat;
         height: auto;
      }
+
     .header{
         padding-top: 50px;
     }
+
     .menu{
         display: none;
     }
+
     .header__menu{
         background-color: white;
         height: 3px;
@@ -360,9 +370,11 @@ footer{
         cursor: pointer;
         transition: opacity .5s;
     }
+
     .header__menu:hover{
         opacity: .5;
     }
+
     .header__menu::before{
         content:'';
         background-color: white;
@@ -372,6 +384,7 @@ footer{
         bottom: 8px;
         position: absolute;
     }
+
     .header__menu::after{
         content:'';
         background-color: white;
@@ -381,63 +394,327 @@ footer{
         top: 8px;
         position: absolute;
     }
+
     .section-first{
         margin-right: 0;
         margin-top: 5%;
     }
+
     .section-first__title{
         font: 900 30px/35px 'Roboto-Black';
         text-align: end;
     }
+
     .section-first__subtitle{
         font: 900 17px/23px 'Roboto-Black';
 
     }
+
     .section-first__button{
         margin-bottom: 23%;
         font: 900 17px/23px 'Roboto-Black';
         padding: 14px 60px;
     }
+
+    .div-second__title{
+        font: 500 27px/35px 'Roboto-Black';
+    }
+
+    .div-second__button{
+        font: 900 17px/23px 'Roboto-Black';
+    }
+
+    .div-third__button{
+        font: 900 17px/23px 'Roboto-Black';
+    }
+
+    .div-photos__title{
+        width: 70%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer-location__p{
+        font: 900 16px/21px 'Roboto-Regular';
+    }
+
+    .footer-contacts__tel{
+        padding-right: 15px;
+    }
+
+    .footer-contacts__tel_numb{
+        font: 900 13px/19px 'Roboto-Regular';
+    }
+
+    .footer-contacts__img_phone{
+        width: 20px;
+        height: 34px;
+        padding-right: 30px;
+    }
+
+    .footer-contacts__img_telegram{
+       width: 33px;
+        height: 40px;
+    }
 }
+
 @media (min-width: 769px) {
     .header__menu{
         display: none;
     }
 }
+
+@media (max-width: 520px) {
+    .div-second__title{
+        font: 500 25px/30px 'Roboto-Black';
+        width: 70%;
+    }
+
+    .div-third__subtitle{
+        font: 900 18px/23px 'Roboto-Black';
+    }
+
+    .div-third__img{
+        width: 300px;
+        height: 230px;
+    }
+
+    footer{
+        height: 150px;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .footer-location__logo{
+        padding-right: 6px;
+    }
+
+    .footer-location__p{
+        font: 900 13px/21px 'Roboto-Regular';
+    }
+
+    .footer-contacts{
+        align-items: center;
+    }
+
+    .footer-contacts__tel{
+        padding-right: 10px;
+    }
+
+    .footer-contacts__tel_numb{
+        font: 900 11px/14px 'Roboto-Regular';
+    }
+
+    .footer-contacts__img_phone{
+        width: 10px;
+        height: 30px;
+        padding-right: 15px;
+    }
+
+    .footer-contacts__img_telegram{
+        width: 28px;
+        height: 28px;
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 425px) {
+    .div-second__title {
+        padding-bottom: 20px;
+    }
+
+    .div-third__subtitle {
+        font: 900 14px/19px 'Roboto-Black';
+    }
+
+    .div-third__img {
+        width: 280px;
+        height: 230px;
+    }
+
+    .div-third__button {
+        margin-bottom: 6%;
+    }
+
+    .div-photos__title {
+        width: 70%;
+        font: 500 20px/21px 'Roboto-Medium';
+        padding-top: 37px;
+        padding-bottom: 30px;
+    }
+
+    .div-album {
+        display: none;
+    }
+
+    .div-album_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-album_mobile-img {
+        background: url("img/photo1.png");
+        background-size: contain;
+        width: 260px;
+        height: 260px;
+        margin-bottom: 22px;
+    }
+
+    .div-album_mobile-scroll {
+        background: url("img/album-img-scroll.svg");
+        width: 74px;
+        height: 20px;
+        margin-bottom: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .footer-location__p{
+        font: 900 12px/21px 'Roboto-Regular';
+    }
+    .footer-contacts__img_phone{
+        height: 20px;
+    }
+    .footer-contacts__img_telegram{
+        width: 20px;
+        margin-left: 2px;
+    }
+}
+
+@media (min-width: 426px) {
+    .div-album_mobile{
+        display: none;
+    }
+}
+
 @media (max-width: 320px) {
-    .div-img{
+    .div-img {
         background: url("img/background-mobile.png");
         height: auto;
         background-size: cover;
     }
 
-    .div-second__title{
+    .div-second__title {
         width: auto;
     }
 
-    .header{
+    .header {
         padding-top: 38px;
     }
+
     .section-first {
         margin-top: 24px;
         padding-right: 0;
     }
-    .section-first__title{
+
+    .section-first__title {
         font: 900 30px/35px 'Roboto-Black';
         text-align: center;
-        margin:0 0 2px 0;
+        margin: 0 0 2px 0;
     }
-    .section-first__subtitle{
+
+    .section-first__subtitle {
         font: 900 15px/20px 'Roboto-Black';
         padding-bottom: 107px;
-        margin:0;
+        margin: 0;
         text-align: center;
     }
-    .section-first__button{
+
+    .section-first__button {
         font: 900 15px/24px 'Roboto-Black';
         padding: 10px 105px;
         margin: auto;
         margin-bottom: 13%;
     }
 
+    .div-second__title {
+        font: 900 20px/23px 'Roboto-Regular';
+        padding-top: 23px;
+        padding-bottom: 4px;
+        width: 76%;
+    }
+
+    .div-second__subtitle {
+        font: 900 20px/23px 'Roboto-Medium';
+        padding-bottom: 19px;
+    }
+
+    .div-second__button {
+        font: 900 20px/23px 'Roboto-Black';
+        padding: 11px 96px;
+        margin-bottom: 29px;
+    }
+
+    .div-second__button_book::after {
+        display: block;
+        content: "";
+        height: 3px;
+        width: 146px;
+        background: #FFDA45;
+        margin-top: 10px;
+        margin-bottom: 23px;
+    }
+
+    .div-third__title {
+        font: 900 20px/34px 'Roboto-Black';
+        margin-top: 14%;
+        padding-top: 0;
+    }
+
+    .div-third__subtitle {
+        font: 900 10px/12px 'Roboto-Black';
+        margin: 0;
+    }
+
+    .div-third__img {
+        background: url("img/div-third-mobile.png");
+        width: 260px;
+        height: 222px;
+        object-fit: cover;
+        margin: 7% 0 9% 0;
+    }
+
+    .div-third__button {
+        font: 900 20px/23px 'Roboto-Black';
+        padding: 9px 59px;
+        margin-bottom: 12%;
+    }
+
+    footer {
+        justify-content: space-around;
+        height: 93px;
+    }
+
+    .footer-location {
+        margin-top: 7px;
+    }
+
+    .footer-location__logo {
+        width: 8px;
+        height: 10px;
+        padding-right: 6px;
+    }
+
+    .footer-location__p {
+        font: 900 8px/17px 'Roboto-Regular';
+    }
+
+    .footer-contacts {
+        margin-top: 16px;
+    }
+
+    .footer-contacts__tel_numb {
+        font: 900 8px/11px 'Roboto-Regular';
+    }
+
+    .footer-contacts__img_phone {
+        width: 20px;
+        height: 20px;
+        padding-right: 0;
+    }
+
+    .footer-contacts__img_telegram {
+        width: 22px;
+        height: 17px;
+        margin-left: 4px;
+    }
 }
